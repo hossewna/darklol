@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+   <!-- #region  wraper-->
+   <div class="wraper">
+    <!-- #region  header-->
+     <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+     </div>
+     <header class="header">
+
+      <nav>
+        <div class="close">&times;</div>
+        <div class="item mt-2"><a href="#">home</a></div>
+        <div class="item"><a href="#">contact</a></div>
+        <div class="item"><a href="#">gallery</a></div>
+        <div class="item"><a href="#">about</a></div> 
+        <div class="item"><a href="#">products</a></div>
+      </nav>     
+     </header>
+     <!-- #endregion -->
+   </div>
+   <!-- #endregion -->
+
+
+
+
+
+   <script>
+    let hamburger=document.querySelector(".hamburger")
+    let header=document.querySelector(".header")
+    let close =document.querySelector(".close")
+
+    hamburger.addEventListener("click",function(){
+      header.style.left='0'
+      header.style.opacity='1'
+    })
+    close.addEventListener("click",function(){
+   header.style.left='-100%'   
+   header.style.opacity='0'   
+    })
+    
+   </script>
+</body>
+</html>
